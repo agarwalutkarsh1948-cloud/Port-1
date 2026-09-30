@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Developer & Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remixicon for clean UI icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- 1. Preloader Overlay -->
+  <div id="preloader">
+    <div class="preloader-text-wrap">
+      <h1 id="loader-word">HELLO</h1>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <div class="status-badge">
+      <span class="dot"></span> Available for New Project
+    </div>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Service</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn-talk">Let's Talk ↗</a>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-bg-text">
+        <span>DEV</span><span>PORTFOLIO</span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-left">
+          <h2>Full-Stack & AI Developer</h2>
+          <p>Architecting intelligent web platforms, computer vision pipelines, and modern interactive user experiences.</p>
+          <a href="#contact" class="btn-primary">Let's collaborate ↗</a>
+        </div>
+
+        <div class="hero-center-image">
+          <!-- अपनी ट्रांसपेरेंट इमेज यहाँ जोड़ें -->
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Profile" id="profile-img">
+        </div>
+
+        <div class="hero-right">
+          <ul class="social-list">
+            <li><a href="#" target="_blank"><i class="ri-github-line"></i> GitHub ↗</a></li>
+            <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i> LinkedIn ↗</a></li>
+            <li><a href="#" target="_blank"><i class="ri-instagram-line"></i> Instagram ↗</a></li>
+            <li><a href="#" target="_blank"><i class="ri-file-text-line"></i> Resume ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Selected Work / Projects Section -->
+    <section id="work" class="section work-section">
+      <div class="section-title">
+        <p class="tag">PORTFOLIO</p>
+        <h2>/ SELECTED WORK</h2>
+      </div>
+
+      <!-- Expandable Horizontal Cards -->
+      <div class="cards-container">
+        <!-- Card 1 (Default Active) -->
+        <div class="work-card active" data-title="FaceAttend AI" data-category="COMPUTER VISION">
+          <div class="card-rotated-title"><span>FaceAttend AI</span></div>
+          <div class="card-expanded-content">
+            <span class="card-tag">Computer Vision</span>
+            <h3>FaceAttend AI</h3>
+            <p>Real-time facial detection and automated attendance management system built with Python, Flask & OpenCV.</p>
+            <div class="card-meta">
+              <span>Flask</span>
+              <span>OpenCV</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="card-link">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="work-card" data-title="Smart Logistics" data-category="WEB PLATFORM">
+          <div class="card-rotated-title"><span>Smart Logistics</span></div>
+          <div class="card-expanded-content">
+            <span class="card-tag">Web Platform</span>
+            <h3>Smart Logistics</h3>
+            <p>End-to-end cloud platform for fleet tracking and dynamic route optimization using real-time telemetry.</p>
+            <div class="card-meta">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <a href="#" class="card-link">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="work-card" data-title="CyberShield Core" data-category="SECURITY TECH">
+          <div class="card-rotated-title"><span>CyberShield Core</span></div>
+          <div class="card-expanded-content">
+            <span class="card-tag">Cyber Security</span>
+            <h3>CyberShield Core</h3>
+            <p>Automated endpoint security and anomaly detection monitor analyzing anomalous network activities.</p>
+            <div class="card-meta">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>Docker</span>
+            </div>
+            <a href="#" class="card-link">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="work-card" data-title="NoteShare Cloud" data-category="WEB APPLICATION">
+          <div class="card-rotated-title"><span>NoteShare Cloud</span></div>
+          <div class="card-expanded-content">
+            <span class="card-tag">Cloud Web App</span>
+            <h3>NoteShare Cloud</h3>
+            <p>Collaborative student resource sharing portal with fast PDF indexing and cloud storage integration.</p>
+            <div class="card-meta">
+              <span>Python</span>
+              <span>Tailwind</span>
+              <span>Render</span>
+            </div>
+            <a href="#" class="card-link">Live Demo ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Services Accordion Section -->
+    <section id="services" class="section services-section">
+      <div class="section-title">
+        <h2>/ SERVICES</h2>
+      </div>
+
+      <div class="accordion-container">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <h3><span>01</span> UI / UX DESIGN</h3>
+            <span class="acc-icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="accordion-body">
+            <p>Designing modern, intuitive, and conversion-focused digital interfaces, wireframes, and prototypes with clean typography and balanced negative space.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3><span>02</span> FULL-STACK WEB DEVELOPMENT</h3>
+            <span class="acc-icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="accordion-body">
+            <p>Building high-performance, responsive full-stack applications with solid backend architectures, RESTful APIs, and relational databases.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3><span>03</span> AI & COMPUTER VISION WORKFLOWS</h3>
+            <span class="acc-icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="accordion-body">
+            <p>Integrating machine learning models, OpenCV computer vision pipelines, image processing, and intelligent agent automations.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3><span>04</span> MOTION GRAPHICS & DIGITAL MEDIA</h3>
+            <span class="acc-icon"><i class="ri-add-line"></i></span>
+          </div>
+          <div class="accordion-body">
+            <p>Crafting high-impact promotional graphics, brand design assets, event posters, and smooth interactive web micro-interactions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Experience Section with Hover Floating Preview -->
+    <section id="experience" class="section experience-section">
+      <div class="section-title">
+        <p class="tag">PROFESSIONAL BACKGROUND</p>
+        <h2>/ EXPERIENCE</h2>
+      </div>
+
+      <div class="exp-table">
+        <div class="exp-row" data-preview="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=80">
+          <div class="exp-col-role">
+            <h4>Full-Stack & AI Developer</h4>
+            <span>Academic & Independent Projects</span>
+          </div>
+          <div class="exp-col-desc">
+            <p>Designed and deployed real-time attendance tools with OpenCV & LBPH algorithms alongside full-stack Flask applications.</p>
+          </div>
+          <div class="exp-col-date">2025 – Present</div>
+        </div>
+
+        <div class="exp-row" data-preview="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80">
+          <div class="exp-col-role">
+            <h4>Hackathon Finalist / Lead</h4>
+            <span>Smart India Hackathon</span>
+          </div>
+          <div class="exp-col-desc">
+            <p>Engineered architecture frameworks, presentation pitch materials, and solution prototypes with core development teams.</p>
+          </div>
+          <div class="exp-col-date">2026</div>
+        </div>
+
+        <div class="exp-row" data-preview="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=500&q=80">
+          <div class="exp-col-role">
+            <h4>Digital Media & Graphic Designer</h4>
+            <span>Freelance / Branding</span>
+          </div>
+          <div class="exp-col-desc">
+            <p>Designed marketing assets, promotional launch materials, and modern UI banners using professional creative pipelines.</p>
+          </div>
+          <div class="exp-col-date">2024 – 2025</div>
+        </div>
+      </div>
+
+      <!-- Floating Hover Preview Element -->
+      <div id="hover-image-popup">
+        <img src="" alt="Experience Preview" id="popup-img">
+      </div>
+    </section>
+
+    <!-- 6. Bento-Style Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-title">
+        <p class="tag">CONNECT & REACH OUT</p>
+        <h2>/ GET IN TOUCH</h2>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card bento-cta">
+          <h3>Have an idea or need technical consulting?</h3>
+          <p>Open for full-stack engineering, AI integrations, or contract design work.</p>
+          <div class="bento-buttons">
+            <a href="https://wa.me/" target="_blank" class="bento-btn"><i class="ri-whatsapp-line"></i> Chat on WhatsApp</a>
+            <a href="mailto:your-email@example.com" class="bento-btn secondary"><i class="ri-mail-send-line"></i> Send Email</a>
+          </div>
+        </div>
+
+        <div class="bento-card bento-info">
+          <div class="bento-item">
+            <span class="label">DIRECT EMAIL</span>
+            <p>contact@yourdomain.com</p>
+          </div>
+          <div class="bento-item">
+            <span class="label">LOCATION</span>
+            <p>Bareilly, Uttar Pradesh, India</p>
+          </div>
+          <div class="bento-item">
+            <span class="label">COLLABORATION STATUS</span>
+            <p class="green-text">● Available for Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <span>© 2026 All Rights Reserved.</span>
+      <span class="designed-by">Designed with Precision.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
